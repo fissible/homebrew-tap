@@ -1,8 +1,8 @@
 class Ptyunit < Formula
   desc "Test framework for bash scripts and terminal UI applications"
   homepage "https://github.com/fissible/ptyunit"
-  url "https://github.com/fissible/ptyunit/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "069c164f199dfe23be7987e899f4452a7a74096a8da1b945dd8c40dd3d2f3477"
+  url "https://github.com/fissible/ptyunit/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "7cd535911950952ad2ed202c22ae330543115848263e2792d9901447ff1bec24"
   license "MIT"
 
   depends_on "bash"
@@ -11,7 +11,7 @@ class Ptyunit < Formula
   def install
     # Install core files to libexec (not in PATH directly)
     libexec.install "assert.sh", "mock.sh", "run.sh", "pty_run.py"
-    libexec.install "coverage.sh", "coverage_report.py"
+    libexec.install "coverage.sh", "coverage_report.py", "VERSION"
 
     # Create a wrapper script in bin
     (bin/"ptyunit").write <<~EOS
