@@ -1,8 +1,8 @@
 class Ptyunit < Formula
   desc "Test framework for bash scripts and terminal UI applications"
   homepage "https://github.com/fissible/ptyunit"
-  url "https://github.com/fissible/ptyunit/archive/refs/tags/v1.5.3.tar.gz"
-  sha256 "e2726eb0c720a036a40a50495406d4cc4da50d0a259bf2a0bbf2536f127d0d9e"
+  url "https://github.com/fissible/ptyunit/archive/refs/tags/v1.5.4.tar.gz"
+  sha256 "287c0eac4299d54dd7fc8d6dce99136f27bd101bc275f1aa914e44ce86c1e154"
   license "MIT"
 
   depends_on "bash"
