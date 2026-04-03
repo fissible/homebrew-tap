@@ -8,8 +8,8 @@ class Shellql < Formula
   depends_on "bash"
 
   resource "shellframe" do
-    url "https://github.com/fissible/shellframe/archive/refs/tags/v0.4.0.tar.gz"
-    sha256 "e9335011547c753ae364123583c24d1fd50020b13905212288a598c2d2685729"
+    url "https://github.com/fissible/shellframe/archive/refs/tags/v0.5.0.tar.gz"
+    sha256 "49ce89f8fc83f29e0c11e16ad9550b2bdb1a0a01d7fd1ae81f35ff3e683f07d7"
   end
 
   def install
