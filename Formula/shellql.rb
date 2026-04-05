@@ -1,8 +1,8 @@
 class Shellql < Formula
   desc "Terminal SQLite workbench — browse, query, and edit databases in your terminal"
   homepage "https://github.com/fissible/shellql"
-  url "https://github.com/fissible/shellql/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "d545adcc16069df73d070c9ef0ccc6132a5bca10e827a03cc693adbc4fc59e9b"
+  url "https://github.com/fissible/shellql/archive/refs/tags/v1.2.1.tar.gz"
+  sha256 "45956207aa5643486a17e33e533ac37ad439172f6b4bbb7d8081305614beba6c"
   license "MIT"
 
   depends_on "bash"
@@ -25,6 +25,7 @@ class Shellql < Formula
     (bin/"shql").write <<~EOS
       #!/usr/bin/env bash
       export SHELLFRAME_DIR="#{libexec}/shellframe"
+      export SHQL_VERSION="#{version}"
       exec "#{libexec}/bin/shql" "$@"
     EOS
   end
