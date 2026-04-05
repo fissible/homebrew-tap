@@ -1,8 +1,8 @@
 class Shellql < Formula
   desc "Terminal SQLite workbench — browse, query, and edit databases in your terminal"
   homepage "https://github.com/fissible/shellql"
-  url "https://github.com/fissible/shellql/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "45956207aa5643486a17e33e533ac37ad439172f6b4bbb7d8081305614beba6c"
+  url "https://github.com/fissible/shellql/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "16f0d7205b8b1673b116757027077b563fab008c27e05d288c32a872161f7947"
   license "MIT"
 
   depends_on "bash"
